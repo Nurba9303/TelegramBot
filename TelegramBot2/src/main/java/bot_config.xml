@@ -1,7 +1,7 @@
 <?xml version = "1.0"?>
 <bot>
    <user_name>SimpleParsing_Bot</user_name>
-   <token>950090174:AAHnIG1oIt_YcL0LS3QUP8mOZaNk9wx4y14</token>
+   <token></token>
    
    <request key="__default">
    		<response>Default....</response>
