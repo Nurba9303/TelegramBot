@@ -1,0 +1,96 @@
+<?xml version = "1.0"?>
+<bot>
+   <user_name>SimpleParsing_Bot</user_name>
+   <token>950090174:AAHnIG1oIt_YcL0LS3QUP8mOZaNk9wx4y14</token>
+   
+   <request key="__default">
+   		<response>Default....</response>
+   		<simple key="def1">def1</simple>
+   		<simple key="def2">def2</simple>
+   		<simple key="def3">def3</simple>
+   		
+   		<request key="def-sub1">
+   		   		<response>def-sub1</response>
+		   		<simple key="def-sub1-req1">def-sub1-req1</simple>
+		   		<simple key="def-sub1-req2">def-sub1-req2</simple>
+		   		<simple key="def-sub1-req2">def-sub1-req2</simple>
+		</request>
+		
+		<request key="def-sub2">
+   		   		<response>def-sub1</response>
+		   		<simple key="def-sub1-req1">def-sub1-req1</simple>
+		   		<simple key="def-sub1-req2">def-sub1-req2</simple>
+		   		<simple key="def-sub1-req2">def-sub1-req2</simple>
+		</request>
+   		
+   		
+   		<keyboard>
+   			<row>
+   				<request key="key1">
+					<response>key1</response>
+			   		<simple key="key1-req1">key1-req1</simple>
+			   		<simple key="key1-req2">key1-req2</simple>
+			   		<simple key="key1-req3">key1-req3</simple>
+			   		
+					<keyboard>
+			   			<row>
+			   				<request key="subkey">
+								<response>subkey</response>
+						   		<simple key="key1-req1">key1-req1</simple>
+						   		<simple key="key1-req2">key1-req2</simple>
+						   		<simple key="key1-req3">key1-req3</simple>
+						   		
+						   		<keyboard>
+					   				<row>
+					   					<request key="Parent">
+					   						<link>__default/key1</link>
+					   					</request>
+					   				</row>
+			   					</keyboard>
+						   		
+						   		
+			   				</request>
+							<request key="subkey2">
+								<response>def-sub2</response>
+						   		<simple key="key2-req1">key2-req1x</simple>
+						   		<simple key="key2-req2">key2-req2x</simple>
+						   		<simple key="key2-req3">key2-req3x</simple>
+						   		
+								<keyboard>
+					   				<row>
+					   					<request key="gotokey2">
+					   						<link>__default/key2</link>
+					   					</request>
+					   				</row>
+			   					</keyboard>
+			   					
+			   				</request>
+			   				<request key="main-page">
+			   					<response>linked....</response>
+								<link>__default</link>
+			   				</request>
+			   			</row>
+		   			</keyboard>
+			   		
+   				</request>
+				<request key="key2">
+					<response>def-sub1</response>
+			   		<simple key="key2-req1">key2-req1</simple>
+			   		<simple key="key2-req2">key2-req2</simple>
+			   		<simple key="key2-req3">key2-req3</simple>
+					<keyboard>
+						<row>
+							<request key="main-page">
+								<link>__default</link>
+							</request>
+						</row>
+					</keyboard>
+   				</request>
+   			</row>
+   		</keyboard>
+   		
+   
+   </request>
+   
+   
+</bot>
